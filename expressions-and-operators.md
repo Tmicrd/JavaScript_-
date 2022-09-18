@@ -40,7 +40,7 @@ console.log(result1, result2) // pass excellent
 <pre class="language-javascript"><code class="lang-javascript"><strong>// ||  如果true 返回左边(默认转为布尔值 再判断)
 </strong>// ??  如果true 返回右边(有且只有 两种情况：null 或 undefined)
 
-// || 将得不到特殊值： 0， ''， NaN， null， undefined
+// || 将得不到特殊值： 0， ''， NaN，"false"
 // ?? 是 || 的完善解决方案
 
 console.log(undefined || 'default' ) // default
