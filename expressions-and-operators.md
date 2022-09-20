@@ -75,8 +75,6 @@ Math.ceil(-1.3)      // -1
 ## [Logical AND (&&)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical\_AND)  [Logical OR (||)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical\_OR)
 
 ```javascript
-//  || 左侧为真，返回左侧，否则返回右侧
-//  && 左侧为真，返回右侧，否则返回左侧
 const h = null && 10               // null
 const i = 0 && 10                  // 0
 const j = NaN && 10                // NaN
