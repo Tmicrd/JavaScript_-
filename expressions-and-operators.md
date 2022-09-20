@@ -38,7 +38,7 @@ console.log(result1, result2) // pass excellent
 ## [Nullish coalescing operator (??)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish\_coalescing\_operator)
 
 <pre class="language-javascript"><code class="lang-javascript"><strong>// ||  如果true 返回左侧(默认转为布尔值 再判断)，否则返回右侧
-</strong>// ??  如果true 返回左侧，否则返回右侧。有且只有 两种情况为false：null 和 undefined
+</strong>// ??  只有遇到 null 或 undefined，才会返回右侧
 
 // ||  得不到特殊值： 0， ''， NaN，"false"
 
