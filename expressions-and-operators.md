@@ -22,7 +22,7 @@ console.log(result1, result2) // pass excellent
 
 ## [Optional chaining (?.)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional\_chaining)
 
-<pre class="language-javascript" data-title="短路 返回 undefined"><code class="lang-javascript">const order ={
+<pre class="language-javascript"><code class="lang-javascript">const order ={
   name: 1007,
   isDone: true
 }
