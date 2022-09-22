@@ -1,7 +1,9 @@
 # reduce()
 
-<pre class="language-javascript" data-title="基本用法"><code class="lang-javascript">const arr1 = [1, 2, 3]
-const arr2 = [{ x: 1 }, { x: 2 }, { x: 3 }]
+<pre class="language-javascript"><code class="lang-javascript"><strong>// 基本用法
+</strong><strong>
+</strong><strong>const arr1 = [1, 2, 3]
+</strong>const arr2 = [{ x: 1 }, { x: 2 }, { x: 3 }]
 const arr3 = [[1,2],[3,4],[5,6],[7,8]]
 
 // 求arr1中 数字的和为：6
@@ -29,8 +31,9 @@ const res3 = arr2.reduce((pre, cur, index) => {
 }, [])
 </code></pre>
 
-{% code title="Flap" %}
 ```javascript
+// Flap
+
 const arr = [[1, 2], [3, 4], [5, 6]]
 // 要得到结果： flap: [ 1, 2, 3, 4, 5, 6 ]
 
@@ -46,10 +49,10 @@ const flap = arr.reduce((pre,cur)=>{
   return pre
 },[])
 ```
-{% endcode %}
 
-{% code title="案例" %}
 ```javascript
+// 案例
+
 const Queue = [ 
   'Q1-N1',
   'Q1-N2',
@@ -72,7 +75,6 @@ const result = Queue.reduce(
   // 初始值设为一个 Object， Key 分别为Q1、Q2，value 都为空array
   {Q1: [], Q2: []}
 )
-
 // 返回值 是一个包含 Q1、Q2的 Object
 
 //{
@@ -85,7 +87,18 @@ const result = Queue.reduce(
 //     { key: 'Q2-N2', label: 'Q2-N2' },
 //   ]
 // }
+
+
+// 简化后
+const result = Queue.reduce(
+  (pre, cur) => {
+    cur.split("-")[0] === "Q1" ？pre["Q1"].push({key:cur,label:cur})
+    : pre["Q2"].push({key:cur,label:cur})
+    
+    return pre
+  },
+  {Q1: [], Q2: []}
+)
 ```
-{% endcode %}
 
 ## [返回目录](./)
