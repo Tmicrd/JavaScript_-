@@ -33,7 +33,7 @@
 ```javascript
 示例：
 
-let romise = new Promise(function(resolve,reject){
+let p = new Promise(function(resolve,reject){
     let n = 100;
     setTimeout(()=>{
       n++;
